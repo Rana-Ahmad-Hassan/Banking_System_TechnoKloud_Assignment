@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <!-- Option 1: Include in HTML -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <nav class="navbar" style="background: linear-gradient(to bottom, #33ccff 0%, #ff99cc 100%);">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">
+            <img src="assets/logo.png" alt="" class="img-fluid " width="8%">
+            𝙎𝙩𝙚𝙡𝙡𝙖𝙧 𝙁𝙞𝙣𝙖𝙣𝙘𝙚
+          </a>
+          <a href="SignIn.html">
+            <button class="btn  px-4 py-2 fs-5 btn-outline text-white" style="background-color: #ff99cc;">Sign In</button>
+          </a>
+          
+        </div>
+      </nav>
+
+
+    <div class="container-fluid">
+        <div class="row">
+
+
+            <div class="col-md-2  p-3 bg-light">
+                <h3 class="px-3 pt-2">Profile</h3>
+                <div class="d-flex align-items-center mt-3">
+                    <img id="image-preview" src="assets/profile.jpeg" alt="" class="img-fluid" width="35%" style="border-radius: 200px;">
+                   
+                    
+                    <div class="mx-2">
+                        <h4 id="personName" class=""></h4>
+                        <p id="personEmail"></p>
+                    </div>
+                </div>
+
+                <div class="p-5">
+                    <div class="d-flex mt-4">
+                        <h3> <i class="bi bi-file-earmark-image p-2"
+                                style="background-color: rgb(233, 226, 226); border-radius: 5px;"></i></h3>
+                        <label for="profile-pic-upload" class=" text-warning mx-3 btn btn-danger">Upload Pic</label>
+                        <input type="file" id="profile-pic-upload" accept="image/*" style="display: none;" onchange="displayPic(event)">
+                    </div>
+                    <div class="d-flex mt-4">
+                        <h3> <i class="bi bi-gear-fill p-2"
+                                style="background-color: rgb(233, 226, 226); border-radius: 5px;"></i></h3>
+                        <a href="index.html" class="nav-link mx-3">Settings</a>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <h3> <i class="bi bi-card-heading p-2"
+                                style="background-color: rgb(233, 226, 226); border-radius: 5px;"></i></h3>
+                        <a href="index.html" class="nav-link mx-3">Forms</a>
+                    </div>
+                    <div class="d-flex mt-4">
+                        <h3> <i class="bi bi-wallet p-2 "
+                                style="background-color: rgb(233, 226, 226); border-radius: 5px;"></i></h3>
+                        <a href="index.html" class="nav-link mx-3">FAQ</a>
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="col mx-5">
+
+               
+
+                <div class="row  container-fluid p-4 mt-5 bg-light">
+                    <h3>Bank Detail</h3>
+                    <div class="col-md-4 p-4 mt-5">
+                        <h1 id="loanAmount" class="display-2 fw-bold">0</h1>
+                        <p>i tries to reflect that vision within dark spirit to outline the seriousness of intention that bank</p>
+                        <button class="btn btn-success w-75 p-2 " onclick="addMoney()">Add Money</button>
+                        <button class="btn btn-danger w-75 p-2 mt-4" onclick="withdrawMoney()">Withdraw Money</button>
+                    </div>
+                    
+
+
+                    <div class="col-md-2 border py-3 m-2 container1" style="background-color: rgb(231, 227, 227);">
+                        <img src="assets/house.png" alt="" class="img-fluid pt-3 " width="25%">
+                        <p class="pt-2 fs-4">Faimly House Loan</p>
+                        <h2 class="pt-5">123455</h2>
+                        <span class="text-secondary">Balance Owing</span>
+                    </div>
+
+
+                    <div class="col-md-2 border py-3 m-2 container2 " style="background-color: rgb(231, 227, 227);">
+                        <img src="assets/court.png" alt="" class="img-fluid pt-3 " width="25%">
+                        <p class="pt-2 fs-4">EuroTrip Loan Loan</p>
+                        <h2 class="pt-5">123455</h2>
+                        <span class="text-secondary">Balance Owing</span>
+                    </div>
+
+
+                    <div class="col-md-2 border py-3 m-2 container3" style="background-color: rgb(231, 227, 227);">
+                        <img src="assets/car.png" alt="" class="img-fluid pt-3 " width="25%">
+                        <p class="pt-2 fs-4">Car Loan</p>
+                        <h2 class="pt-5">123455</h2>
+                        <span class="text-secondary">Balance Owing</span>
+                    </div>
+
+
+                </div>
+
+                <div class="col-md-10 container-fluid border mt-5 pt-5">
+                    <table class="table" id="table2">
+                        <thead>
+                            <tr>
+                                <th scope="col">Name</th>
+                                <th scope="col">Email</th>
+                                <th scope="col">Status</th>
+                            </tr>
+                        </thead>
+
+                        
+                    </table>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="script.js">
+        
+    </script>
+</body>
+
+</html>

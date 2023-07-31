@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap-5.3.0-alpha1-dist/bootstrap-5.3.0-alpha1-dist/js/bootstrap.min.js">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body  style="background: linear-gradient(to right, #33ccff 0%, #ff99cc 100%);">
+    <h1 class="text-center display-4 tracking-in-expand " style="color: #4d3943;">𝚂𝚒𝚐𝚗 𝙸𝚗</h1>
+
+   <div class="container text-white">
+        <div class="row d-flex justify-content-center mt-5">
+            <div class="col-md-5">
+
+                <form>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label fs-4">Enter Yor Name</label>
+                        <input type="text" class="form-control" id="name" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label fs-4">Contat No</label>
+                        <input type="tel" class="form-control" id="contact" aria-describedby="emailHelp">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label fs-4">Email address</label>
+                        <input type="email" class="form-control" id="email" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text text-white">We'll never share your email with anyone else.
+                        </div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label fs-4">Set Password</label>
+                        <input type="password" class="form-control" id="password">
+                    </div>
+                    <button type="submit" class="btn btn-warning" onclick="submitForm(event)">Sign In</button>
+                    <a href="index.html" onclick="profileData()" class="btn btn-danger">Next</a>
+                </form>
+            </div>
+        </div>
+    </div>
+    <div class="col-md-5 col-sm-12 container-fluid border mt-5 pt-5">
+        <table class="table text-white" id="table">
+            <thead>
+                <tr>
+                    <th scope="col">Name</th>
+                    <th scope="col">Contact</th>
+                    <th scope="col">Email</th>
+                    <th scope="col">Password</th>
+                </tr>
+            </thead>
+
+            
+        </table>
+    </div>
+    
+ 
+
+    <script src="script.js">
+     
+    </script>
+</body>
+
+</html>
